@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+body{
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.main-heading{
+    animation-name: anim;
+    animation-duration: 5s;
+    word-spacing: 5px;
+}
+.sub-heading{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    word-spacing: 5px;
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translate(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
