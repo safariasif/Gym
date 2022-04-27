@@ -3,7 +3,7 @@
 body{
     font-family: 'Noto Nastaliq Urdu', serif;
 }
-
+/* start of header section style */
 header{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url('../images/banner.jpg');
@@ -12,9 +12,11 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/* end of header section style */
 
+/* start of banner section style */
 .banner{
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,3 +44,4 @@ header{
         transform: translate(0px);
     }
 }
+/* end of banner section style */

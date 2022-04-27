@@ -1,5 +1,5 @@
 import '../../styles/index.css'
-export const Navbar =()=>{
+export const Header =()=>{
     return(
        <header>
             <Banner/>
@@ -15,4 +15,12 @@ const Banner =()=>{
         <h5 className='sub-heading display-6'>No Pain No gain</h5>
       </div>
     );
+}
+
+const Navbar=()=>{
+    return(
+        <nav>
+            
+        </nav>
+    )
 }

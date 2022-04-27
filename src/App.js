@@ -1,8 +1,8 @@
-import { Navbar } from "./components/navbar"
+import { Header } from './components/navbar';
 export const App =()=>{
-    return(
-        <div>
-            <Navbar/>
-        </div>
-    )
+    return (
+      <div>
+        <Header />
+      </div>
+    );
 }
