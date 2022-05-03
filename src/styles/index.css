@@ -92,3 +92,49 @@ header{
     background: linear-gradient(rgba(0,0,0,.5) , rgba(0,0,0,.9));
 }
 /* end of navbar section */
+
+/* start of award  */
+.awards{
+     background: linear-gradient(rgba(0,0,0,.8) , rgba(0,0,0,.9));
+}
+.awards-description{
+    word-spacing: 3px;
+    line-height: 30px;
+}
+.cards .row .col-lg-4 .icons .icons-size{
+    font-size: 50px;
+}
+.cards .row .col-lg-4 .icons .description{
+    line-height: 30px;
+}
+.left-side{
+    animation-name:left-side ;
+    animation-duration: 3s;
+}
+.right-side{
+    animation-name:right-side;
+    animation-duration: 3s;
+}
+@keyframes left-side {
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes right-side {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+/* end of award  */
