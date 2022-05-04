@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+body{
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+/* start of header section style */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* end of header section style */
+
+/* start of banner section style */
+.banner{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.main-heading{
+    animation-name: anim;
+    animation-duration: 5s;
+    word-spacing: 5px;
+}
+.sub-heading{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    word-spacing: 5px;
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translate(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+/* end of banner section style */
+
+/* start of navbar section */
+.nav-menu{
+    background: linear-gradient(rgba(0,0,0,.3) , rgba(0,0,0,.6));
+    padding: 30px 0px;
+    direction: rtl;
+    transition: 0.7s;
+}
+.nav-menu .navbar-collapse .navbar-nav .nav-item{
+    padding: 0px 10px;
+}
+.nav-menu .navbar-collapse .navbar-nav  .nav-item .nav-link{
+    color: #eee;
+    transition: all 0.5s;
+    font-size: 17px;
+}
+.nav-menu .navbar-collapse .navbar-nav  .nav-item .nav-link:hover{
+    color: #a3dafc;
+}
+.nav-button{
+    outline: none;
+    border: none;
+    outline-style: none;
+}
+.line1 , .line2 , .line3{
+        width: 23px;
+        height: 3px;
+        margin: 7px;
+        background-color: #eee;
+        transition: all 0.4s;
+        outline: none;
+}
+.change .line1{
+    transform: rotate(-45deg) translate(-8.4px,6px);
+
+}
+.change .line2{
+    opacity: 0;
+}
+.change .line3{
+    transform: rotate(45deg) translate(-8px ,-6px);
+}
+.custom-menu{
+    padding: 20px 0px;
+    background: linear-gradient(rgba(0,0,0,.5) , rgba(0,0,0,.9));
+}
+/* end of navbar section */
+
+/* start of award  */
+.awards{
+     background: linear-gradient(rgba(0,0,0,.8) , rgba(0,0,0,.9));
+}
+.awards-description{
+    word-spacing: 3px;
+    line-height: 30px;
+}
+.cards .row .col-lg-4 .icons .icons-size{
+    font-size: 50px;
+}
+.cards .row .col-lg-4 .icons .description{
+    line-height: 30px;
+}
+.left-side{
+    animation-name:left-side ;
+    animation-duration: 3s;
+}
+.right-side{
+    animation-name:right-side;
+    animation-duration: 3s;
+}
+@keyframes left-side {
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes right-side {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+/* end of award  */
